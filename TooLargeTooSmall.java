@@ -18,7 +18,18 @@ public class TooLargeTooSmall {
     
     public Integer guess(Integer g) {
         
-        return chosenNum;
+        int result; 
+            
+        if(g == chosenNum) {
+            result = 0; 
+        } else if(g > chosenNum) {
+            result = 1; 
+        } else{
+            result = -1;
+        };
+        
+            
+        return result;
 
     }
 }
